@@ -573,7 +573,7 @@ export function getEloDelta(p1, p2, s1, s2) {
   const R1 = p1.elo, R2 = p2.elo;
   const E1 = 1/(1+10**((R2-R1)/400)), E2 = 1-E1;
   const a1 = s1 > s2 ? 1 : 0, a2 = 1 - a1;
-  const margin = Math.abs(score1 - score2);
+  const margin = Math.abs(s1 - s2);
 const K = 32;
 
 let mf;
